@@ -114,7 +114,7 @@ resource "aws_instance" "my-prod-web-server1" {
                 sudo apt-get update -y
                 sudo apt-get install -y apache2
                 sudo systemctl start apache2.service
-                sudo bash -c 'echo My very first web server--: > /var/www/html/index.html'
+                sudo bash -c 'echo My very first web server :) > /var/www/html/index.html'
                 EOF
   tags = {
     Name = "prod-server"
