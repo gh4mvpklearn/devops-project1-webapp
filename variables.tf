@@ -17,7 +17,7 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "access_key" {
+/*variable "access_key" {
     description = "access key"
     type = string
     sensitive = true
@@ -29,4 +29,4 @@ variable "secret_key" {
     type = string
     sensitive = true
   
-}
+}*/
