@@ -9,7 +9,7 @@ terraform {
     encrypt        = true
   }
 }
-provider "aws" {
+/*provider "aws" {
     region = var.aws-region
     #access_key = var.access_key
     #secret_key = var.secret_key
@@ -119,4 +119,4 @@ resource "aws_instance" "my-prod-web-server1" {
   tags = {
     Name = "prod-server"
   }
-}
+}*/
