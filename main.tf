@@ -1,4 +1,14 @@
 #test1
+terraform {
+  required_version = ">=0.12.13"
+  backend "s3" {
+    bucket         = "my-s3-state-bucket-2022"
+    key            = "terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "aws-locks"
+    encrypt        = true
+  }
+}
 provider "aws" {
     region = var.aws-region
     access_key = var.access_key
