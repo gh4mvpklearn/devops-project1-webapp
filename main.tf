@@ -9,13 +9,13 @@ terraform {
     encrypt        = true
   }
 }
-/*provider "aws" {
+provider "aws" {
     region = var.aws-region
     #access_key = var.access_key
     #secret_key = var.secret_key
 }
 
-resource "aws_vpc" "prod-vpc" {
+/*resource "aws_vpc" "prod-vpc" {
     cidr_block = var.vpc-cidr-block
 }
 
